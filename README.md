@@ -1,5 +1,8 @@
 # Grim Finance — Vault depositFor Reentrancy PoC
 
+> **Educational Purpose Only** — This PoC is created for security research and education
+> purposes only. It is a simplified simulation, not a fork replay against mainnet.
+
 **Date:** 2021-12-19 | **Loss:** $30M | **Chain:** Fantom
 
 ## Quick Start
@@ -16,3 +19,7 @@ The vault's `depositFor()` function used `safeTransferFrom` which triggered a ca
 ## Key Contracts
 - `src/Exploit.sol` — Vulnerable vault with depositFor reentrancy + fixed version
 - `test/Exploit.t.sol` — Foundry test demonstrating the exploit
+
+## License
+
+MIT — For educational use only.
